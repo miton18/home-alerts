@@ -1,0 +1,14 @@
+message: |
+  Hight latency
+drone: range
+endpoint: payg
+schedule: 1m
+params:
+  window: 1 h
+  precision: 0
+  average: 5 m
+notify:
+  main:
+  - selector: unifi.system.latency
+    params:
+      max: 60

@@ -1,0 +1,5 @@
+steps:
+- duration: PT1H
+  actions:
+  - with: email
+    to: omni/miton18
